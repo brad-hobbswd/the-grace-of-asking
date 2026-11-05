@@ -142,3 +142,22 @@ body{background:#f7f0e3;color:var(--ink);font-family:Georgia,"Times New Roman",s
   .home-book-cover{right:5%;top:70%;width:13%;max-height:40%;}
   .studies-book-image{right:5%;top:70%;width:13%;max-height:40%;}
 }
+
+
+/* Final cover alignment: tuck the small cover directly beneath the terminal g */
+.home-book-cover,
+.studies-book-image{
+  right:12.5%;
+  top:59%;
+  width:6.5%;
+  max-height:36%;
+  transform:translateY(-50%);
+}
+@media(max-width:900px){
+  .home-book-cover{right:7%;top:61%;width:9%;max-height:36%;}
+  .studies-book-image{right:7%;top:61%;width:9%;max-height:36%;}
+}
+@media(max-width:560px){
+  .home-book-cover{right:5%;top:62%;width:11%;max-height:34%;}
+  .studies-book-image{right:5%;top:62%;width:11%;max-height:34%;}
+}
