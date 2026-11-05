@@ -92,3 +92,16 @@ body{background:#f7f0e3;color:var(--ink);font-family:Georgia,"Times New Roman",s
 .welcome-text{min-width:0;}
 @media(max-width:900px){.welcome-copy{grid-template-columns:minmax(165px,190px) minmax(0,1fr);column-gap:22px;}.welcome-heading h2{font-size:40px;}}
 @media(max-width:560px){.welcome-copy{grid-template-columns:minmax(0,1fr);row-gap:12px;}.welcome-heading h2{white-space:normal;font-size:42px;}}
+
+/* Chapter Studies uses the same real banner and cover treatment as the landing page */
+.studies-banner{position:relative;width:calc(100% - 64px);max-width:1500px;height:auto;min-height:0;margin:26px auto 28px;padding:0;overflow:hidden;border:3px solid #d49a22;border-radius:18px;background:#172b3d;box-shadow:0 12px 30px rgba(5,22,42,.18);}
+.studies-banner-image{display:block;width:100%;height:auto;max-width:none;}
+.studies-book-image{position:absolute;z-index:2;left:5.5%;top:50%;transform:translateY(-50%);display:block;width:clamp(150px,15%,220px);height:auto;max-height:80%;object-fit:contain;filter:drop-shadow(9px 12px 12px rgba(0,0,0,.42));}
+.studies-banner-label{position:absolute;z-index:3;right:3%;bottom:5%;padding:9px 17px;border:2px solid #d49a22;border-radius:7px;background:linear-gradient(#0c3154,#03182f);color:#fff;font:bold 12px Georgia,serif;letter-spacing:2px;box-shadow:0 3px 10px rgba(0,0,0,.25);}
+.studies-welcome{grid-template-columns:minmax(0,1.5fr) minmax(300px,.85fr);}
+.studies-welcome-copy{grid-template-columns:minmax(250px,270px) minmax(0,1fr);column-gap:28px;align-items:start;}
+.studies-welcome-heading{min-width:0;}
+.studies-welcome-heading h2{font-size:clamp(42px,4vw,52px);white-space:nowrap;}
+.studies-welcome-text{min-width:0;}
+@media(max-width:900px){.studies-banner{width:calc(100% - 40px);margin:18px auto 22px;}.studies-book-image{left:4%;width:clamp(105px,20%,165px);}.studies-banner-label{font-size:10px;padding:7px 11px;}.studies-welcome{grid-template-columns:1fr;}.studies-welcome-copy{grid-template-columns:minmax(165px,190px) minmax(0,1fr);column-gap:22px;}.studies-welcome-heading h2{font-size:40px;}}
+@media(max-width:560px){.studies-banner{width:calc(100% - 24px);margin:14px auto 18px;border-radius:13px;}.studies-book-image{left:3%;width:clamp(82px,23%,125px);max-height:74%;}.studies-banner-label{right:3%;bottom:3%;font-size:8px;letter-spacing:1px;padding:5px 8px;}.studies-welcome-copy{grid-template-columns:minmax(0,1fr);row-gap:12px;}.studies-welcome-heading h2{white-space:normal;font-size:42px;}}
