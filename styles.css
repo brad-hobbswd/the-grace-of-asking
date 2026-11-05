@@ -182,3 +182,14 @@ body{background:#f7f0e3;color:var(--ink);font-family:Georgia,"Times New Roman",s
   .home-book-cover{right:4%;bottom:5%;width:16%;max-height:43%;}
   .studies-book-image{right:4%;bottom:5%;width:16%;max-height:43%;}
 }
+
+
+/* Raise the book cover slightly while keeping it resting on the sweater */
+.home-book-cover,
+.studies-book-image{bottom:9%;}
+@media(max-width:900px){
+  .home-book-cover,.studies-book-image{bottom:9%;}
+}
+@media(max-width:560px){
+  .home-book-cover,.studies-book-image{bottom:8%;}
+}
