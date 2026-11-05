@@ -78,3 +78,9 @@ body{background:#f7f0e3;color:var(--ink);font-family:Georgia,"Times New Roman",s
 .home-hero{position:relative;}
 .home-book-cover{position:absolute;z-index:2;left:5%;top:50%;transform:translateY(-50%);display:block;width:clamp(145px,16%,230px);height:auto;max-height:82%;object-fit:contain;filter:drop-shadow(9px 12px 12px rgba(0,0,0,.42));}
 @media(max-width:700px){.home-book-cover{left:4%;width:clamp(92px,24%,150px);max-height:78%;}}
+
+/* Final banner spacing: clear separation from navigation and feature strip */
+.home-hero{margin:26px auto 28px;width:calc(100% - 64px);max-width:1500px;padding:0;}
+.home-banner-image{display:block;width:100%;height:auto;}
+.home-book-cover{left:5.5%;top:50%;width:clamp(150px,15%,220px);max-height:80%;}
+@media(max-width:700px){.home-hero{width:calc(100% - 28px);margin:16px auto 20px;}.home-book-cover{left:4%;width:clamp(95px,23%,145px);}}
