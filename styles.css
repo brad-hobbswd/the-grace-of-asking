@@ -84,3 +84,11 @@ body{background:#f7f0e3;color:var(--ink);font-family:Georgia,"Times New Roman",s
 .home-banner-image{display:block;width:100%;height:auto;}
 .home-book-cover{left:5.5%;top:50%;width:clamp(150px,15%,220px);max-height:80%;}
 @media(max-width:700px){.home-hero{width:calc(100% - 28px);margin:16px auto 20px;}.home-book-cover{left:4%;width:clamp(95px,23%,145px);}}
+
+/* Prevent the Welcome heading from colliding with the introduction text */
+.welcome-copy{grid-template-columns:minmax(250px,270px) minmax(0,1fr);column-gap:28px;align-items:start;}
+.welcome-heading{min-width:0;}
+.welcome-heading h2{font-size:clamp(42px,4vw,52px);white-space:nowrap;}
+.welcome-text{min-width:0;}
+@media(max-width:900px){.welcome-copy{grid-template-columns:minmax(165px,190px) minmax(0,1fr);column-gap:22px;}.welcome-heading h2{font-size:40px;}}
+@media(max-width:560px){.welcome-copy{grid-template-columns:minmax(0,1fr);row-gap:12px;}.welcome-heading h2{white-space:normal;font-size:42px;}}
