@@ -193,3 +193,14 @@ body{background:#f7f0e3;color:var(--ink);font-family:Georgia,"Times New Roman",s
 @media(max-width:560px){
   .home-book-cover,.studies-book-image{bottom:8%;}
 }
+
+
+/* Lift the cover further so it sits visibly on the sweater */
+.home-book-cover,
+.studies-book-image{bottom:14%;}
+@media(max-width:900px){
+  .home-book-cover,.studies-book-image{bottom:13%;}
+}
+@media(max-width:560px){
+  .home-book-cover,.studies-book-image{bottom:11%;}
+}
