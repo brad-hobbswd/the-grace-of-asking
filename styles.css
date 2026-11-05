@@ -123,3 +123,22 @@ body{background:#f7f0e3;color:var(--ink);font-family:Georgia,"Times New Roman",s
 @media(max-width:900px){
   .studies-book-image{right:8%;width:clamp(58px,15%,100px);max-height:62%;}
 }
+
+
+/* Fine-tune cover placement: smaller and below the final g, clear of the title */
+.home-book-cover,
+.studies-book-image{
+  right:12%;
+  top:69%;
+  width:8%;
+  max-height:42%;
+  transform:translateY(-50%);
+}
+@media(max-width:900px){
+  .home-book-cover{right:7%;top:69%;width:11%;max-height:42%;}
+  .studies-book-image{right:7%;top:69%;width:11%;max-height:42%;}
+}
+@media(max-width:560px){
+  .home-book-cover{right:5%;top:70%;width:13%;max-height:40%;}
+  .studies-book-image{right:5%;top:70%;width:13%;max-height:40%;}
+}
