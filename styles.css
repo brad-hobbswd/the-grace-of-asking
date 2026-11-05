@@ -73,3 +73,8 @@ body{background:#f7f0e3;color:var(--ink);font-family:Georgia,"Times New Roman",s
 .home-hero{width:calc(100% - 48px);max-width:1500px;margin:24px auto 0;border:3px solid #d49a22;border-radius:18px;box-shadow:0 12px 30px rgba(5,22,42,.18);}
 .home-banner-image{width:100%;height:auto;border-radius:14px;}
 @media(max-width:700px){.home-hero{width:calc(100% - 24px);margin:14px auto 0;border-radius:13px;}.home-banner-image{border-radius:10px;}}
+
+/* Keep the actual book cover visible on the left side of the inset banner */
+.home-hero{position:relative;}
+.home-book-cover{position:absolute;z-index:2;left:5%;top:50%;transform:translateY(-50%);display:block;width:clamp(145px,16%,230px);height:auto;max-height:82%;object-fit:contain;filter:drop-shadow(9px 12px 12px rgba(0,0,0,.42));}
+@media(max-width:700px){.home-book-cover{left:4%;width:clamp(92px,24%,150px);max-height:78%;}}
