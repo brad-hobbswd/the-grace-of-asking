@@ -161,3 +161,24 @@ body{background:#f7f0e3;color:var(--ink);font-family:Georgia,"Times New Roman",s
   .home-book-cover{right:5%;top:62%;width:11%;max-height:34%;}
   .studies-book-image{right:5%;top:62%;width:11%;max-height:34%;}
 }
+
+
+/* Larger book cover resting on the sweater at the lower-right of the banner */
+.home-book-cover,
+.studies-book-image{
+  left:auto;
+  right:5.5%;
+  top:auto;
+  bottom:6%;
+  transform:none;
+  width:10.5%;
+  max-height:48%;
+}
+@media(max-width:900px){
+  .home-book-cover{right:4.5%;bottom:6%;width:13%;max-height:46%;}
+  .studies-book-image{right:4.5%;bottom:6%;width:13%;max-height:46%;}
+}
+@media(max-width:560px){
+  .home-book-cover{right:4%;bottom:5%;width:16%;max-height:43%;}
+  .studies-book-image{right:4%;bottom:5%;width:16%;max-height:43%;}
+}
