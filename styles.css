@@ -68,3 +68,8 @@ body{background:#f7f0e3;color:var(--ink);font-family:Georgia,"Times New Roman",s
 /* Show the supplied banner as a complete image, without cropping or overlays */
 .home-hero{min-height:0;height:auto;background:#172b3d;border-bottom:4px solid var(--gold);overflow:hidden;}
 .home-banner-image{display:block;width:100%;height:auto;max-width:none;object-fit:contain;object-position:center;}
+
+/* Inset the banner within the page with breathing room and rounded corners */
+.home-hero{width:calc(100% - 48px);max-width:1500px;margin:24px auto 0;border:3px solid #d49a22;border-radius:18px;box-shadow:0 12px 30px rgba(5,22,42,.18);}
+.home-banner-image{width:100%;height:auto;border-radius:14px;}
+@media(max-width:700px){.home-hero{width:calc(100% - 24px);margin:14px auto 0;border-radius:13px;}.home-banner-image{border-radius:10px;}}
